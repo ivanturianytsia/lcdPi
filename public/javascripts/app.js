@@ -1,4 +1,5 @@
 var app = angular.module('app', []);
+
 app.factory('Socket', function($rootScope) {
     var socket = io.connect();
     return {
