@@ -26,7 +26,7 @@ app.factory('Socket', function($rootScope) {
 app.controller('main', ['$scope', 'Socket',
         function($scope, Socket) {
             $scope.avalible = false;
-            $scope.message = ['', ''];
+            $scope.message = '';
             $scope.send = function() {
                 Socket.emit('message', {
                     content: $scope.message

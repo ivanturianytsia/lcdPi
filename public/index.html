@@ -22,8 +22,7 @@
                 <h3 ng-hide="avalible">Waiting for connection</h3>
                 <form ng-show="avalible">
                     <div class="input-group">
-                        <input class="form-control input-lg" ng-model="message[0]" ng-change="send()" maxlength="16" autocomplete="off" placeholder="Say something in row 1" />
-                        <input class="form-control input-lg" ng-model="message[1]" ng-change="send()" maxlength="16" autocomplete="off" placeholder="Say something in row 2" />
+                        <input class="form-control input-lg" ng-model="message" ng-change="send()" maxlength="32" autocomplete="off" placeholder="Say something" />
                     </div>
                 </form>
               </div>
