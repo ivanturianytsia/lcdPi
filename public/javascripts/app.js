@@ -27,7 +27,9 @@ app.controller('main', ['$scope', 'Socket',
     function($scope, Socket) {
         $scope.avalible = false;
         $scope.message = '';
-
+        $scope.send = function() {
+            Socket.emit('message', $scope.message);
+        }
         Socket.on('avalible', function(data) {
             $scope.avalible = data;
         });
