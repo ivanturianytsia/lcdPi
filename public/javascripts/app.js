@@ -32,9 +32,9 @@ app.controller('main', ['$scope', 'Socket',
             Socket.emit('message', {
                 content: $scope.message
             })
-            Socket.on('avalible', function(data) {
-                $scope.avalible = data;
-            });
         }
+        Socket.on('avalible', function(data) {
+            $scope.avalible = data;
+        });
     }
 ]);
